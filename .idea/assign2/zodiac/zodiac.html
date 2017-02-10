@@ -1,10 +1,47 @@
+<!--
+Mariya Khokhlova
+mariyakhokhlova@my.smccd.edu
+CIS 114 OL
+zodiac.html
+Modern JavaScript, Chapter 5
+Assignment # 2.2
+Feb-9-2017
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>Mariya Khokhlova - zodiac.html</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/zodiac.css">
 </head>
 <body>
-
+<!-- zodiac.html -->
+<form action="" method="post" id="theForm">
+    <fieldset><legend>Chinese Zodiac Sign</legend>
+        <img class="displayed" src="images/zodiac.jpg" name="image" id="image">
+        <p>Enter month and year of birth to get your Chinese zodiac sign</p>
+        <div><label for="year">Year</label><input type="text" name="year" id="year" required></div>
+        <div><label for="month">Month</label> <select name="month" id="month" required>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select></div>
+        <input type="submit" value="Submit" id="submit">
+    </fieldset>
+</form>
+<script src="js/zodiac.js"></script>
 </body>
 </html>
