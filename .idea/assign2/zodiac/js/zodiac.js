@@ -29,19 +29,15 @@ function findSign() {
         'Tasteful, crafty, warm, elegant, charming, intuitive, sensitive, calm',
     ];
 
-    // Variable to store the zodiac sign:
-    var zodiacSign;
-
-    // Variable to store the path to image:
-    var pathToImage;
-
-    // Variable to output the trait:
-    var message;
+    // Declare variables:
+    var zodiacSign; // Variable to store the zodiac sign
+    var pathToImage; // Variable to store the path to image
 
     // Get a reference to the form elements:
     var year = document.getElementById('year');
     var month = document.getElementById('month');
-    var output = document.getElementById('output');
+    var outputTrait = document.getElementById('outputTrait');
+    var outputSign = document.getElementById('outputSign');
     var image = document.getElementById('image');
 
     // Convert the year to a number:
@@ -61,8 +57,6 @@ function findSign() {
 
         // Check if remainder is -1 and if so change it to 11:
         if (remainder == -1) {remainder = 11};
-
-        console.log('remainder after checking month is ' + remainder);
 
         // Assign the zodiac sign without considering a month:
         switch (remainder) {
@@ -107,18 +101,14 @@ function findSign() {
                 break;
         } // End of switch.
 
-        console.log('Zodiac Sign is ' + zodiacSign);
-
+        // Generate the path to the image based on zodiacSign:
         pathToImage = './images/' + zodiacSign + '.jpg';
-        console.log('Path is ' + pathToImage);
 
-        message = traits[remainder];
-        console.log('trait is ' + message);
+        // Output the calculated zodiac sign and associated trait to the form:
+        outputSign.innerHTML = zodiacSign.toUpperCase(); // Converts the string to upper case
+        outputTrait.innerHTML = traits[remainder];
 
-        // TALK TO ANDREW
-        // output.innerHTML = message;
-        console.log('output is ' + output);
-
+        // Update the image in the form:
         document.getElementById('image').src = pathToImage;
 
     } else { // Show an error:

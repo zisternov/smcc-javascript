@@ -44,12 +44,14 @@ border:solid 2px #425955;
 font-size:14px;
 font-weight:bold;
 margin-bottom:8px;
+     text-align:center;
 }
  p{
 font-size:11px;
 color:#666666;
 margin-bottom:20px;
-border-bottom:solid 1px #BFBD9F;
+border-top:solid 1px #BFBD9F;
+     padding-top:10px;
 padding-bottom:10px;
   text-align:center;
 }
@@ -100,8 +102,18 @@ IMG.displayed {
  display: block;
  margin-left: auto;
  margin-right: auto;
+    padding-top:10px;
  padding-bottom:10px;
 }
 legend {
  margin:0 auto;
+    font-weight:bold;
+}
+span {
+    display:inline-block;
+    width:100%;
+    font-size:11px;
+    color:#666666;
+    margin-bottom:10px;
+    text-align:center;
 }
