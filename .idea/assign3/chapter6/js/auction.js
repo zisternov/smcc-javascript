@@ -10,6 +10,8 @@
 
 function init() {
     'use strict';
+    // Declare variable (an empty string) for the output message
+    var message = '';
 
     // Declare the end date of the auction
     var end = new Date('08 March 2017 08:00:00 UTC');
@@ -32,7 +34,7 @@ function init() {
         hours = (diff / 1000 / 60 / 60); // Convert milliseconds to seconds, seconds to mins and divide them by 60 to get hours
 
         // Build a string to display the remaining time
-        var message = parseInt(hours, 10) + ' hours, ' + parseInt(minutes, 10) + ' minutes, ' + parseInt(seconds, 10) + ' seconds';
+        message = parseInt(hours, 10) + ' hours, ' + parseInt(minutes, 10) + ' minutes, ' + parseInt(seconds, 10) + ' seconds';
     }
     // If auction day is in the past, display the corresponding message to the user
     else {
