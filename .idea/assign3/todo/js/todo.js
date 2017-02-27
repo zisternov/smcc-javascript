@@ -47,35 +47,36 @@
         return false;
     } // End of addTask() function.
 
+    function deleteTask () { // Anonymous function to delete the task
+        'use strict';
+        // Invoke prompt
+        var response = prompt('What task do you want to delete?');
+        // Convert user input to an integer
+        var taskID = parseInt(response,10);
+        // Check if a task exists in array
+        if  ((taskID > 0) && (taskID <= tasks.length)) { // If so, remove it from array and print the updated array
+            tasks.splice(taskID - 1,1);
+            printArray();
+        }
+        else {
+            // Check if the array exists but the task is out of bound
+            if (((taskID < 1) && (tasks.length > -1)) || ((taskID > tasks.length) && (tasks.length > -1))) {
+                printArray('Task does not exist!')} // If so, add a message and print the array
+            else {
+                // In case array is empty and task does not exist, print an error
+                var output = document.getElementById('output');
+                var message = 'Task does not exist!'
+                output.innerHTML = message;
+            }
+        }
+    };
 
     // Initial setup:
     function init() {
         'use strict';
         // Get form references
         document.getElementById('add').onclick = addTask;
-        document.getElementById('delete').onclick = function () { // Anonymous function to delete the task
-            'use strict';
-            // Invoke prompt
-            var response = prompt('What task do you want to delete?');
-            // Convert user input to an integer
-            var taskID = parseInt(response,10);
-            // Check if a task exists in array
-            if  ((taskID > 0) && (taskID <= tasks.length)) { // If so, remove it from array and print the updated array
-                tasks.splice(taskID - 1,1);
-                printArray();
-            }
-            else {
-                // Check if the array exists but the task is out of bound
-                if (((taskID < 1) && (tasks.length > -1)) || ((taskID > tasks.length) && (tasks.length > -1))) {
-                    printArray('Task does not exist!')} // If so, add a message and print the array
-                else {
-                    // In case array is empty and task does not exist, print an error
-                    var output = document.getElementById('output');
-                    var message = 'Task does not exist!'
-                    output.innerHTML = message;
-                }
-            }
-        };
+        document.getElementById('delete').onclick = deleteTask;
     } // End of init() function.
     window.onload = init;
 
