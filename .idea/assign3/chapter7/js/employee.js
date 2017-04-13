@@ -38,12 +38,8 @@ function setText(elementId, message) {
     if ( (typeof elementId == 'string')
         && (typeof message == 'string') ) {
         var output = $(elementId);
-        if (output.textContent !== undefined) {
-            output.textContent = message;
-        } else {
-            output.innerText = message;
-        }
-    } // End of main IF.
+        output.innerHTML = message;
+            } // End of main IF.
 } // End of setText() function.
 
 function process() {
