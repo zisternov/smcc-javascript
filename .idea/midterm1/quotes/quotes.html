@@ -1,0 +1,39 @@
+<!--
+Mariya Khokhlova
+mariyakhokhlova@my.smccd.edu
+CIS 114 OL
+quotes.html
+Modern JavaScript, Chapter 8
+Assignment # midterm1
+Feb-27-2017
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mariya Khokhlova - Quotes</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+    <!-- Script 6.5 - task.html -->
+<body>
+<form action="" method="post" id="theForm">
+    <fieldset><legend>Quotes Manager</legend>
+            <div><label for="quote">Enter Quote</label><input type="text" name="quote" id="quote" required></div>
+            <div>
+                <input type="button" value="Add Quote" id="add">
+                <input type="button" value="Modify Quote" id="modify">
+                <input type="button" value="Delete Quote" id="delete">
+            </div>
+            <div id="error"></div>
+		    <div id="output"></div>
+        </fieldset>
+    </form>
+<script src="js/utilities.js"></script>
+<script src="js/quotes.js"></script>
+</body>
+</html>
