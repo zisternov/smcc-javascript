@@ -1,0 +1,36 @@
+<!--
+Mariya Khokhlova
+mariyakhokhlova@my.smccd.edu
+CIS 114 OL
+box.html
+Modern JavaScript, Chapter 12
+Assignment # 5.1
+April-4-2017
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mariya Khokhlova - box.html</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- box.html -->
+<form action="" method="post" id="theForm">
+    <fieldset>
+        <p>Use this form to calculate the volume of the box.</p>
+        <div><label for="length">Length</label><input name="length" id="length" value="1"  required></div>
+        <div><label for="width">Width</label><input name="width" id="width" value="1"  required></div>
+        <div><label for="height">Height</label><input name="height" id="height" value="1"  required></div>
+        <div><label for="volume">Volume</label><input type="text" name="volume" id="volume" value=""></div>
+        <div><input type="submit" value="Calculate" id="submit"></div>
+    </fieldset>
+</form>
+<script src="./js/box.js"></script>
+</body>
+</html>

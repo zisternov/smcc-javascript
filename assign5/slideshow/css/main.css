@@ -1,0 +1,38 @@
+/*
+Mariya Khokhlova
+mariyakhokhlova@my.smccd.edu
+CIS 114 OL
+main.css
+Murach's JQuery, Chapter 9
+Assignment # 5
+April-11-2017
+ */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 380px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid blue;
+}
+h1, h2, ul, p {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	padding-bottom: .25em;
+	color: blue;
+}
+h2 {
+	font-size: 120%;
+	padding: .5em 0;
+}
+img {
+	height: 250px;
+}
+#slides img {
+	display: none;
+}
+#buttons {
+	margin-top: .5em;
+	text-align: center;
+}
