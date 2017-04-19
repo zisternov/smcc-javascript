@@ -1,0 +1,80 @@
+/*
+Mariya Khokhlova
+mariyakhokhlova@my.smccd.edu
+CIS 114 OL
+form.css
+Assignment # midterm2
+Apr-17-2017
+ */
+
+p, h1, form, button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #1b1d26;
+    background-color: #f1f2d8;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 14px;
+    background-color: #ffffff;
+    border: solid 2px #425955;
+}
+
+h1 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+    text-align: left;
+}
+
+p {
+    font-size: 11px;
+    color: #666666;
+    margin-bottom: 20px;
+    border-top: solid 1px #BFBD9F;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+select {
+    float: left;
+    font-size: 12px;
+    padding: 4px 2px;
+    border: solid 1px #BFBD9F;
+    width: 200px;
+    margin: 2px 0 20px 10px;
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+span {
+    display: inline-block;
+    width: 100%;
+    font-size: 11px;
+    color: #666666;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#description {
+    text-align: justify;
+}
